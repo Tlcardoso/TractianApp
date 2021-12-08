@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgba(34,102,195,0.2) ;
+    border-radius: .5rem 0 0 .5rem ;
+    width: 300px;
+    height: 300px;
+    
+}
+
+.form{
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: -100%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
+
+  @media (max-width: 640px){
+    .container{
+      border-radius: .5rem;
+    }
+  }
