@@ -1,0 +1,55 @@
+.teste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1D2248;
+    height: 90vh;
+    width: 20%;
+    box-shadow: 0 0 1em black;
+    margin-left: -100%;
+    transition: margin-left 1s;
+}
+
+.teste2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1D2248;
+    height: 90vh;
+    width: 20%;
+    box-shadow: 0 0 1em black;
+    transition: margin-left 1s;
+    margin-left: 0%;
+}
+
+.buttonscontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg,#070B2E,#15193F, #212650);
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    border-image-source: linear-gradient(to left, #232852, #0A1034);
+    width: 90%;
+    height: 15vh;
+    
+}
+
+.buttons:hover,
+.buttons:focus{
+    background: linear-gradient(45deg,#188EE8,#01BCEF, #01EFFB);
+    border-image-source: linear-gradient(to left, #05E7FF, #195AAA);
+}
+
