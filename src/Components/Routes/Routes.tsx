@@ -9,6 +9,9 @@ export const Rota = () => {
     return (
             <Routes>
                 <Route path='/' element={<Login/>}/>
+                <Route path='/Home' element={<Home/>}/>
+                <Route path='/Assets' element={<Home/>}/>
+                <Route path='/teste' element={<Home/>}/>
                 <Route path='/teste' element={<Home/>}/>
              </Routes>
     )

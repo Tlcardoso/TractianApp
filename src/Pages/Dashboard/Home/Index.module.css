@@ -1,41 +1,36 @@
-#components-layout-demo-custom-trigger .trigger {
-    padding: 0 24px;
-    font-size: 18px;
-    line-height: 64px;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  
-  #components-layout-demo-custom-trigger .trigger:hover {
-    color: #1890ff;
-  }
-  
-  #components-layout-demo-custom-trigger .logo {
-    height: 32px;
-    margin: 16px;
-    background: rgba(255, 255, 255, 0.3);
-  }
-  
-  .site-layout .site-layout-background {
-    background: #fff;
-  }
 
-
-.page{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: screen;
-    height: screen;
-}
 
 .container{
-    background-color: #454545;
-    color: white;
-    width: 100%;
-    height: 100vh;
+  background: linear-gradient(30deg,#808080,#6a6a6a,#545454,#3f3f3f);
+  color: white;
+  width: 100%;
+  height: 100vh;
+}
+.containerdashboardup{
+  display: flex;
+  margin-left: 0;
+  transition: margin-left 1s;
+}
+.containerdashboarddown{
+  display: flex;
+  margin-left: -18%;
+  transition: margin-left 1s;
+
 }
 
-.testando{
-    background-color: red;
+.dashboard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow:inset 0px 0px 30px black;
+  border-radius: 1rem 0 0 0;
+  background-color: #2c2c2c;
+  color: white;
+  width: 85%;
+  height: 90vh;
+}
+.teste{
+  width: 80%;
+  height: 80%;
 }

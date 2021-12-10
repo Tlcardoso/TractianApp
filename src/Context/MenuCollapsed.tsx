@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useContext, useState } from 'react'
 
 type CollapsedContextProviderProps={
     children: React.ReactNode,
@@ -13,7 +13,7 @@ type CollapsedContextType={
     setCollapsed: React.Dispatch<React.SetStateAction<CollapsedDecide | null>>
 }
 
-export const CollapsedContext = createContext<CollapsedContextType | null>(null)
+const CollapsedContext = createContext<CollapsedContextType | any>(true)
 
 export default function CollapsedProvider({children}: CollapsedContextProviderProps){
     const [collapsed, setCollapsed] = useState<CollapsedDecide | null>(null)
@@ -24,4 +24,10 @@ export default function CollapsedProvider({children}: CollapsedContextProviderPr
             {children}
         </CollapsedContext.Provider>
     )
+}
+
+export function useCollapsed(){
+    const context = useContext(CollapsedContext);
+    const { collapsed, setCollapsed } = context
+    return { collapsed, setCollapsed };
 }
