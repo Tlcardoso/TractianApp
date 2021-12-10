@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 15px;
+    background: #2c2c2c;
+    box-shadow: 0px 0px 30px black;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    width: 40rem;
+    height: 15rem;
+}
+
+
+
+
+.title{
+    width: 32rem;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.usercontainer{
+    display: flex;
+}
+
+.imgcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding:5px; 
+    background:linear-gradient(45deg,#0e5e9b,#38a3ca,#22abc3,#22c38d); 
+ 
+}
+
+.teste{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: white;
+}
+
+.container2{
+    display: flex;
+    width: 8rem;
+    height: 8rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.namecontainer{
+    font-weight: bold;
+}

@@ -1,10 +1,13 @@
 import './App.css';
 import { Rota } from './Components/Routes/Routes';
+import CollapsedProvider from './Context/MenuCollapsed';
 
 function App() {
   return (
     <div className="App">
-      <Rota/>
+      <CollapsedProvider>
+        <Rota/>
+      </CollapsedProvider>
     </div>
   );
 }
