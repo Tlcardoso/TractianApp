@@ -1,0 +1,55 @@
+.container{
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background: white;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin-left: 7%;
+    height: 100%;
+}
+.search div{
+    display: flex;
+    align-items: center;
+    padding-left: 20px ;
+    width: 20rem;
+    height: 2rem;
+    border-radius: .5rem;
+    border: none;
+    background: #EAEDF2;
+}
+
+.userstats{
+    width: 20%;
+    height: 100%;
+}
+.menubuttonactive{
+    left: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #4187f6;
+    transform: rotate(180deg);
+    transition: transform 1s;
+}
+.menubuttondesactive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #4187f6;
+    transition: transform 1s;
+}

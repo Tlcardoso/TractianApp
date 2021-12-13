@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 10rem;
+    margin-left: 0;
+    border-radius: 1rem;
+    background: #4187f6;
+    color: white;
+    padding-left: 10px;
+}
+.container h1{
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+}
+
+.textcontrainer{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.textcontrainer p{
+    margin: 0;
+    margin-bottom: 10px;
+}
