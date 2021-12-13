@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    width: 24%;
+    color: #4187f6;
+}
+
+.container p{
+    margin: 0;
+    font-size: 18px;
+}
+
+.imagecontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background: #4187f6;
+}
+
+.imagecontainer img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.containername{
+    font-weight: bold;
+}
