@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 130px;
+    border-radius: 1rem;
+    border: 1px solid;
+    color: #4187f6;
+    background: #FEFEFE;
+}
+.containeron{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 130px;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px black;
+    color: #FEFEFE;
+    background: #4187f6;
+}
+
+.text{
+    font-size: 14px;
+    font-weight: bold;
+}
+.switch{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+.switch p{
+    margin: 0;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
-import LoginForm from '../../Components/Login/Index'
-import LoginMsg from '../../Components/LoginMsg/Index'
+import LoginForm from '../../Componentes2/Login/Index'
+import LoginMsg from '../../Componentes2/LoginMsg/Index'
 import styles from './Index.module.css'
 
 const Login = () => {

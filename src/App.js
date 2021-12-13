@@ -1,5 +1,5 @@
 import './App.css';
-import { Rota } from './Components/Routes/Routes';
+import { Rota } from './Routes/Routes';
 import CollapsedProvider from './Context/MenuCollapsed';
 
 function App() {
