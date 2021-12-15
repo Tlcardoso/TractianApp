@@ -14,15 +14,20 @@ export interface MenuResponsiveProps {
 
 const MenuResponsive: React.FC<MenuResponsiveProps> = ({page}) => {
     const [active, setActive] = useState(page)
-    const { collapsed } = useCollapsed()
+    const { collapsed, setCollapsed } = useCollapsed()
     
-    console.log(collapsed)
+
     
     
     return (
-        <div className={styles.navigation} style={collapsed ? {width: '300px'} : {width: '70px'}}>
+        <div className={collapsed ? styles.navigationoff : styles.navigation}>
             <ul>
-                <li className={active == 'dashboard' ? styles.active : styles.list} onClick={() => setActive('dashboard')}>
+                <li className={active == 'dashboard' ? styles.active : styles.list} 
+                onClick={() => {
+                    setActive('dashboard')
+                    setCollapsed(false)
+                }}
+                >
                     <Link to="/dashboard" className={styles.link}>
                         <a>
                             <span className={styles.icon}>
@@ -32,7 +37,11 @@ const MenuResponsive: React.FC<MenuResponsiveProps> = ({page}) => {
                         </a>
                     </Link>
                 </li>
-                <li className={active == 'Assets' ? styles.active : styles.list} onClick={() => setActive('Assets')}>
+                <li className={active == 'Assets' ? styles.active : styles.list} 
+                 onClick={() => {
+                    setActive('dashboard')
+                    setCollapsed(false)
+                }}>
                     <Link to="/assets">
                         <a>
                             <span className={styles.icon}>
@@ -42,7 +51,11 @@ const MenuResponsive: React.FC<MenuResponsiveProps> = ({page}) => {
                         </a>
                     </Link>
                 </li>
-                <li className={active == 'Companies' ? styles.active : styles.list} onClick={() => setActive('Companies')}>
+                <li className={active == 'Companies' ? styles.active : styles.list} 
+                onClick={() => {
+                    setActive('dashboard')
+                    setCollapsed(false)
+                }}>
                     <Link to="">
                         <a>
                             <span className={styles.icon}>
@@ -52,7 +65,11 @@ const MenuResponsive: React.FC<MenuResponsiveProps> = ({page}) => {
                         </a>
                     </Link>
                 </li>
-                <li className={active == 'Units' ? styles.active : styles.list} onClick={() => setActive('Units')}>
+                <li className={active == 'Units' ? styles.active : styles.list} 
+                onClick={() => {
+                    setActive('dashboard')
+                    setCollapsed(false)
+                }}>
                     <Link to="">
                         <a>
                             <span className={styles.icon}>
@@ -62,7 +79,11 @@ const MenuResponsive: React.FC<MenuResponsiveProps> = ({page}) => {
                         </a>
                     </Link>
                 </li>
-                <li className={active == 'Users' ? styles.active : styles.list} onClick={() => setActive('Users')}>
+                <li className={active == 'Users' ? styles.active : styles.list} 
+                onClick={() => {
+                    setActive('dashboard')
+                    setCollapsed(false)
+                }}>
                     <Link to="">
                         <a>
                             <span className={styles.icon}>
@@ -72,7 +93,11 @@ const MenuResponsive: React.FC<MenuResponsiveProps> = ({page}) => {
                         </a>
                     </Link>
                 </li>
-                <li className={active == 'Sign-out' ? styles.active : styles.list} onClick={() => setActive('Sign-out')}>
+                <li className={active == 'Sign-out' ? styles.active : styles.list}
+                onClick={() => {
+                    setActive('dashboard')
+                    setCollapsed(false)
+                }}>
                     <Link to="">
                         <a>
                             <span className={styles.icon}>

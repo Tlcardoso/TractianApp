@@ -8,6 +8,7 @@ import styles from './Index.module.css'
 import CemiCircleChart from '../../../Componentes2/CemiCircleChart/Index'
 import ColumnChart from '../../../Componentes2/ColumnChart/Index'
 import Members from '../../../Componentes2/Members/Index'
+import { Calendar } from 'antd'
 
 
 
@@ -21,13 +22,18 @@ const Assets = () => {
             <section className={styles.conteudocontainer}>
                 <Header/>
                 <section className={styles.infocontainer}>
+                <div className={styles.infocard}>
+                        <div className={styles.animation}>
+                            <HelloCard/>
+                            <CardsInfo/>
+                            <ColumnChart/>
+                        </div>
+                    </div>
                     <div className={styles.fixedcard}>
                         <CemiCircleChart/>
                         <Members/>
-                    </div>
-                    <div className={styles.infocard}>
-                        <div className={styles.animation}>
-                            
+                        <div className={styles.calendarcontainer}>
+                            <Calendar fullscreen={false}/>
                         </div>
                     </div>
                 </section>

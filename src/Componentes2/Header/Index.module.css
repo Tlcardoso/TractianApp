@@ -29,6 +29,19 @@
     width: 20%;
     height: 100%;
 }
+.menubuttonmobile{
+    left: 10rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #4187f6;
+    transform: rotate(180deg);
+    transition: transform 1s;
+}
+
 .menubuttonactive{
     left: 10rem;
     display: flex;
@@ -51,6 +64,18 @@
     background: #4187f6;
     transition: transform 1s;
 }
+
+@media screen and (max-width: 740px) {
+    .menubuttonactive{
+        display: none;
+    }
+    .menubuttondesactive{
+        display: none;
+    }
+    .menubuttonmobile{
+        display: flex;
+    }
+  }
 
 @media screen and (max-width: 400px) {
     .search{

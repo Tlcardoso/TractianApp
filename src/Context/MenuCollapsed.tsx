@@ -16,7 +16,7 @@ type CollapsedContextType={
 const CollapsedContext = createContext<CollapsedContextType | any>(true)
 
 export default function CollapsedProvider({children}: CollapsedContextProviderProps){
-    const [collapsed, setCollapsed] = useState<CollapsedDecide | boolean>(true)
+    const [collapsed, setCollapsed] = useState<CollapsedDecide | boolean>(false)
     
 
     return(
