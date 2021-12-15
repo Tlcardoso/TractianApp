@@ -25,3 +25,21 @@
     margin: 0;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 1000px) {
+    .container h1{
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .textcontrainer{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    .textcontrainer p{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+  }

@@ -20,18 +20,18 @@ const Dashboard = () => {
             <section className={styles.conteudocontainer}>
                 <Header/>
                 <section className={styles.infocontainer}>
+                <div className={styles.infocard}>
+                        <div className={styles.animation}>
+                            <HelloCard/>
+                            <CardsInfo/>
+                            <ColumnChart/>
+                        </div>
+                    </div>
                     <div className={styles.fixedcard}>
                         <CemiCircleChart/>
                         <Members/>
                         <div className={styles.calendarcontainer}>
                             <Calendar fullscreen={false}/>
-                        </div>
-                    </div>
-                    <div className={styles.infocard}>
-                        <div className={styles.animation}>
-                            <HelloCard/>
-                            <CardsInfo/>
-                            <ColumnChart/>
                         </div>
                     </div>
                 </section>

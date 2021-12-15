@@ -87,3 +87,9 @@
     line-height: 60px;
     white-space: nowrap;
 }
+
+@media screen and (max-width: 740px) {
+    .navigation{
+        display: none;
+    }
+  }

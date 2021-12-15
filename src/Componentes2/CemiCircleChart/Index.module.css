@@ -21,7 +21,7 @@
     display: block;
     margin: 0;
     width: 40px;
-    height: 5px;
+    height: 3px;
     border-radius: 1rem;
 }
 
@@ -43,3 +43,27 @@
     width: 50%;
     height: 50%;
 }
+
+@media screen and (max-width: 1000px) {
+    .textcontainer div h1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .textcontainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .chartscontainer{
+        align-items: center;
+        justify-content: center;
+        width: 80%
+    }
+    .controldisplay{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  }

@@ -72,7 +72,7 @@ const CemiCircleChart = () => {
         <div className={styles.container}>
             <h1>Assets Statics</h1>
             <div className={styles.textcontainer}>
-              <div >
+              <div className={styles.controldisplay}>
                   <h1>Status</h1>
                   <p>In Operation</p>
                   <a style={{background: '#18D217'}}></a>

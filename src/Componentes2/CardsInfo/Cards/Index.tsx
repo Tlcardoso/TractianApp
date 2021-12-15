@@ -11,10 +11,10 @@ export interface CardsProps {
 
 const Cards: React.FC<CardsProps> = ({name , icon, propsparent}) => {
 
+
     const [state, setState] = useState(true)
     const [ligado, setLigado] = useState('On')
     
-    console.log(icon.props.style.color)
     function OnOff(){
         setState(!state)
         if(state == false){
