@@ -67,3 +67,28 @@
         justify-content: center;
     }
   }
+
+  @media screen and (max-width: 740px) {
+    .textcontainer div h1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .textcontainer{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .chartscontainer{
+        align-items: center;
+        justify-content: center;
+        width: 80%
+    }
+    .controldisplay{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+    }
+  }
