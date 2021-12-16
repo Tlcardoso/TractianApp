@@ -9,6 +9,8 @@ import CemiCircleChart from '../../../Componentes2/CemiCircleChart/Index'
 import ColumnChart from '../../../Componentes2/ColumnChart/Index'
 import Members from '../../../Componentes2/Members/Index'
 import { Calendar } from 'antd'
+import Index from '../../../Componentes2/Title/Index'
+import AssetsCards from '../../../Componentes2/AssetsCard/Index'
 
 
 
@@ -24,9 +26,8 @@ const Assets = () => {
                 <section className={styles.infocontainer}>
                 <div className={styles.infocard}>
                         <div className={styles.animation}>
-                            <HelloCard/>
-                            <CardsInfo/>
-                            <ColumnChart/>
+                            <Index children={'Assets'}/>
+                            <AssetsCards/>
                         </div>
                     </div>
                     <div className={styles.fixedcard}>

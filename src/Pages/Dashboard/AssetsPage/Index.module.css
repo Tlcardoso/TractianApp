@@ -2,7 +2,7 @@
 .container{
   display: flex;
   background: linear-gradient(30deg,#808080,#6a6a6a,#545454,#3f3f3f);
-  color: white;
+  color: black;
   width: 100%;
   height: auto;
 }
