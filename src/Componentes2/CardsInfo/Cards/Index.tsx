@@ -9,7 +9,7 @@ export interface CardsProps {
     
   }
 
-const Cards: React.FC<CardsProps> = ({name , icon, propsparent}) => {
+const Cards: React.FC<CardsProps> = ({name , icon}) => {
 
 
     const [state, setState] = useState(true)

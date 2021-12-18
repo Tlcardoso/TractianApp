@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Index.module.css'
 
-const Index = ({children= ''}) => {
+const Title = ({children= ''}) => {
     return (
         <div className={styles.container}>
             <h1>{children}</h1>
@@ -9,4 +9,4 @@ const Index = ({children= ''}) => {
     )
 }
 
-export default Index
+export default Title

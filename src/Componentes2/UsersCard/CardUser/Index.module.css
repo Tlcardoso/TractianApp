@@ -1,0 +1,81 @@
+.sectioncontainer{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    perspective: 300px;
+    cursor: pointer;
+}
+
+.containerOn{
+    display: flex;
+    z-index: 1;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    border: 1px solid;
+    color: white;
+    background: #4187f6;
+    transform: rotateY(0deg);
+    transition: 700ms;
+}
+
+.containerOff{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    border: 1px solid;
+    color: white;
+    background: #4187f6;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: 700ms;
+}
+
+.container p{
+    margin: 0;
+}
+
+.containerFlipOff{
+    display: flex;
+    position: relative;
+    top: -200px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    background: #aabef7;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    transition: 700ms;
+}
+
+.containerFlipOn{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    text-align: inherit;
+    padding-left: 20px;
+    top: -200px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    background: #aabef7;
+    transform: rotateY(0deg);
+    transition: 700ms;
+}
+
+.containerFlipOn p{
+    margin: 0;
+    margin-bottom: 10px;
+}

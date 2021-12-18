@@ -1,4 +1,3 @@
-
 import React from 'react'
 
 import Header from '../../../Componentes2/Header/Index'
@@ -9,18 +8,21 @@ import Members from '../../../Componentes2/Members/Index'
 import { Calendar } from 'antd'
 import Title from '../../../Componentes2/Title/Index'
 import UnitsCard from '../../../Componentes2/UnitsCard/Index'
+import UsersCards from '../../../Componentes2/UsersCard/Index'
 
-const Units = () => {
+
+
+const Users = () => {
     return (
         <div className={styles.container}>
-        <MenuResponsive page='Units'/>
+        <MenuResponsive page='Users'/>
         <section className={styles.conteudocontainer}>
             <Header/>
             <section className={styles.infocontainer}>
             <div className={styles.infocard}>
                     <div className={styles.animation}>
-                        <Title children={'Units'}/>
-                        <UnitsCard/>
+                        <Title children={'Users'}/>
+                        <UsersCards/>
                     </div>
                 </div>
                 <div className={styles.fixedcard}>
@@ -36,4 +38,4 @@ const Units = () => {
     )
 }
 
-export default Units
+export default Users

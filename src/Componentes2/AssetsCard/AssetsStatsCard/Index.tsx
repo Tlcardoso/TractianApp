@@ -1,29 +1,62 @@
 import React from 'react'
 import styles from './Index.module.css'
 
-const AssetsStatsCards = () => {
+export interface AssetsStatsCardsProps {
+    name?: string    
+    image?: string
+    model?: string
+    status?: string
+    sensors?: string
+    specifications?: any
+    healthscore?: string
+    metrics?: any
+  }
+
+const AssetsStatsCards: React.FC<AssetsStatsCardsProps> = ({
+    name, 
+    image, 
+    model, 
+    status, 
+    sensors,
+    specifications,
+    healthscore,
+    metrics
+    }) => {
+
+
+    const dateFormat = (date: string) => {
+
+        const monthsName = [
+            'jan', 'feb', 'mar', 'apr', 'may', 'june',
+            'jul', 'aug', 'sept', 'oct', 'nov', 'dec'
+        ]
+        
+        const ISOdate = new Date(date)
+            return `${ISOdate.getDate()} ${monthsName[ISOdate.getMonth()]} at ${ISOdate.getHours()}:${ISOdate.getMinutes()}`
+    }
+
     return (
         <section className={styles.container}>
-            <h1>Motor H13D-1</h1>
-            <img src='/images/machine.jpg'/>
+            <h1>{name}</h1>
+            <img src={image}/>
             <div>
                 <p>
-                    <b>Status:</b> In allert
+                    <b>Status:</b> {status}
                 </p>
                 <p>
-                    <b>Start date:</b> 2 months ago
+                    <b>Temperarure:</b> {specifications.maxTemp}
                 </p>
                 <p>
-                    <b>Model:</b> motor
+                    <b>Model:</b> {model}
                 </p>
                 <p>
-                    <b>Sensor ID:</b> GSJ1535
+                    <b>Sensor ID:</b> {sensors}
                 </p>
                 <p>
-                    <b>Last update:</b> 16 feb at 13:17
+                    <b>Last update:</b> {dateFormat(metrics.lastUptimeAt)}
                 </p>
                 <p>
-                    <b>health:</b> 70%
+                    <b>health:</b> {healthscore}%
                 </p>
             </div>
             

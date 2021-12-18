@@ -51,9 +51,9 @@ const CemiCircleChart = () => {
             name: '',
             innerSize: '80%',
             data: [
-              { name: 'In Operation', y: 5, color: '#18D217' },
-              { name: 'In Alert', y: 10, color: '#FFC035' },
-              { name: 'In Downtime', y: 10, color: '#FF3440' },
+              { name: 'In Operation', y: 6, color: '#18D217' },
+              { name: 'In Alert', y: 2, color: '#FFC035' },
+              { name: 'In Downtime', y: 2, color: '#FF3440' },
             ]
           }
         ],

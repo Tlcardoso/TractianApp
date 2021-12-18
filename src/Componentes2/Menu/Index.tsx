@@ -39,7 +39,7 @@ const MenuResponsive: React.FC<MenuResponsiveProps> = ({page}) => {
                 </li>
                 <li className={active == 'Assets' ? styles.active : styles.list} 
                  onClick={() => {
-                    setActive('dashboard')
+                    setActive('Assets')
                     setCollapsed(false)
                 }}>
                     <Link to="/assets">
@@ -53,10 +53,10 @@ const MenuResponsive: React.FC<MenuResponsiveProps> = ({page}) => {
                 </li>
                 <li className={active == 'Companies' ? styles.active : styles.list} 
                 onClick={() => {
-                    setActive('dashboard')
+                    setActive('Companies')
                     setCollapsed(false)
                 }}>
-                    <Link to="">
+                    <Link to="/companies">
                         <a>
                             <span className={styles.icon}>
                                 <InsertRowLeftOutlined style={{ fontSize: '1.5rem', color: '#fff' }} />
@@ -67,10 +67,10 @@ const MenuResponsive: React.FC<MenuResponsiveProps> = ({page}) => {
                 </li>
                 <li className={active == 'Units' ? styles.active : styles.list} 
                 onClick={() => {
-                    setActive('dashboard')
+                    setActive('Units')
                     setCollapsed(false)
                 }}>
-                    <Link to="">
+                    <Link to="/units">
                         <a>
                             <span className={styles.icon}>
                                 <HomeOutlined style={{ fontSize: '1.5rem', color: '#fff' }} />
@@ -81,10 +81,10 @@ const MenuResponsive: React.FC<MenuResponsiveProps> = ({page}) => {
                 </li>
                 <li className={active == 'Users' ? styles.active : styles.list} 
                 onClick={() => {
-                    setActive('dashboard')
+                    setActive('Users')
                     setCollapsed(false)
                 }}>
-                    <Link to="">
+                    <Link to="/users">
                         <a>
                             <span className={styles.icon}>
                                 <TeamOutlined style={{ fontSize: '1.5rem', color: '#fff' }}/>

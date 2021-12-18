@@ -6,25 +6,20 @@ import styles from './Index.module.css'
 import CemiCircleChart from '../../../Componentes2/CemiCircleChart/Index'
 import Members from '../../../Componentes2/Members/Index'
 import { Calendar } from 'antd'
-import AssetsCards from '../../../Componentes2/AssetsCard/Index'
 import Title from '../../../Componentes2/Title/Index'
+import CompaniesCard from '../../../Componentes2/CompaniesCard/Index'
 
-
-
-
-const Assets = () => {
-
-
+const Companies = () => {
     return (
         <div className={styles.container}>
-            <MenuResponsive page='Assets'/>
+            <MenuResponsive page='Companies'/>
             <section className={styles.conteudocontainer}>
                 <Header/>
                 <section className={styles.infocontainer}>
                 <div className={styles.infocard}>
                         <div className={styles.animation}>
-                            <Title children={'Assets'}/>
-                            <AssetsCards/>
+                            <Title children={'Companies'}/>
+                            <CompaniesCard/>
                         </div>
                     </div>
                     <div className={styles.fixedcard}>
@@ -40,4 +35,4 @@ const Assets = () => {
     )
 }
 
-export default Assets
+export default Companies

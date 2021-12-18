@@ -1,13 +1,16 @@
 import './App.css';
 import { Rota } from './Routes/Routes';
 import CollapsedProvider from './Context/MenuCollapsed';
+import ApiProvider from './Context/apiContext';
 
 function App() {
   return (
     <div className="App">
-      <CollapsedProvider>
-        <Rota/>
-      </CollapsedProvider>
+      <ApiProvider>
+        <CollapsedProvider>
+          <Rota/>
+        </CollapsedProvider>
+      </ApiProvider>
     </div>
   );
 }
