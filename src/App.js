@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <ApiProvider>
         <CollapsedProvider>
-          <Rota/>
+            <Rota/>
         </CollapsedProvider>
       </ApiProvider>
     </div>

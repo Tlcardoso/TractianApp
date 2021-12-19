@@ -98,7 +98,7 @@ const MenuResponsive: React.FC<MenuResponsiveProps> = ({page}) => {
                     setActive('dashboard')
                     setCollapsed(false)
                 }}>
-                    <Link to="">
+                    <Link to="/" onClick={() => localStorage.clear()}>
                         <a>
                             <span className={styles.icon}>
                                 <ImportOutlined style={{ fontSize: '1.5rem', color: '#fff' }}/>

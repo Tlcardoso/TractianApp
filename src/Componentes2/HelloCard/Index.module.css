@@ -43,3 +43,12 @@
         margin-bottom: 10px;
     }
   }
+  @media screen and (max-width: 400px) {
+    .container {
+        padding: 10px;
+    }
+    .container p {
+        margin: 2px;
+    }
+
+  }

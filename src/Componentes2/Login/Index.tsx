@@ -9,19 +9,22 @@ export type FormProperties = {
 }
 
 const LoginForm = () => {
+
     const [catchEmail, setCatchEmail] = useState('') 
     const [catchPassword, setCatchPassword] = useState('') 
     const navigate = useNavigate()
 
-    const email = 'teste@gmail.com'
+    const email = 'richard@gmail.com'
     const senha = '123456'
 
     function loginValidate(){
         if(catchEmail === email && catchPassword === senha){
-            return navigate('/teste')
+            navigate('/dashboard') 
+            localStorage.setItem('@User','Logged') 
         }else{
             return console.log('errou')
         }
+
     }
 
     const onFinish = (values: string) => {
@@ -36,6 +39,7 @@ const LoginForm = () => {
     
       return (
           <section className={styles.container}>
+            <img src='/images/logo-mobile.png'/>
             <Form
             name="basic"
             labelCol={{ span: 8 }}
@@ -72,7 +76,7 @@ const LoginForm = () => {
                 <Checkbox>Remember me</Checkbox>
             </Form.Item>
         
-            <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+            <Form.Item wrapperCol={{ offset: 8, span: 16 }} >
                 <Button 
                 type="primary" 
                 htmlType="submit"
@@ -80,6 +84,8 @@ const LoginForm = () => {
                 >
                     Login
                 </Button>
+                <br/>
+                <a href='https://github.com/Tlcardoso/TractianApp'>Forgot Password?</a>
             </Form.Item>
             </Form>
         </section>

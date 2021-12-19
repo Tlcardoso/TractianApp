@@ -4,9 +4,7 @@ import styles from './Index.module.css'
 const LoginMsg = () => {
     return (
         <section className={styles.container}>
-            <div className={styles.text}>
-                <p>Reduza os gastos na sua empresa!</p>
-            </div>
+                <img src='/images/logo.png'/>
         </section>
     )
 }

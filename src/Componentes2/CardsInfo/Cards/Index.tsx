@@ -1,12 +1,10 @@
 import { Switch } from 'antd'
-import React, { useState } from 'react'
+import React, { SetStateAction, useState } from 'react'
 import styles from './Index.module.css'
 
 export interface CardsProps {
     name?: string
     icon?: any
-    propsparent?: any
-    
   }
 
 const Cards: React.FC<CardsProps> = ({name , icon}) => {
@@ -14,7 +12,8 @@ const Cards: React.FC<CardsProps> = ({name , icon}) => {
 
     const [state, setState] = useState(true)
     const [ligado, setLigado] = useState('On')
-    
+
+
     function OnOff(){
         setState(!state)
         if(state == false){

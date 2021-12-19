@@ -11,7 +11,7 @@ const ColumnChart = () => {
             text: 'Monthly Status Control'
         },
         subtitle: {
-            text: 'Source: WorldClimate.com'
+            text: ''
         },
         xAxis: {
             categories: [
@@ -33,7 +33,7 @@ const ColumnChart = () => {
         yAxis: {
             min: 0,
             title: {
-                text: 'Rainfall (mm)'
+                text: 'Status'
             }
         },
         tooltip: {

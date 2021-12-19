@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import CardsInfo from '../../../Componentes2/CardsInfo/Index'
 import Header from '../../../Componentes2/Header/Index'
@@ -9,10 +9,18 @@ import CemiCircleChart from '../../../Componentes2/CemiCircleChart/Index'
 import ColumnChart from '../../../Componentes2/ColumnChart/Index'
 import Members from '../../../Componentes2/Members/Index'
 import { Calendar } from 'antd'
+import { useNavigate } from 'react-router-dom'
 
 
 const Dashboard = () => {
-    
+
+    const navigate = useNavigate()
+
+    useEffect(() =>{
+        if(localStorage.getItem('@User') == null){
+            navigate('/')
+        }
+    }, [])
 
     return (
         <div className={styles.container}>

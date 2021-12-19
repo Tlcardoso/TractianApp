@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import Header from '../../../Componentes2/Header/Index'
 import MenuResponsive from '../../../Componentes2/Menu/Index'
@@ -8,11 +8,20 @@ import Members from '../../../Componentes2/Members/Index'
 import { Calendar } from 'antd'
 import AssetsCards from '../../../Componentes2/AssetsCard/Index'
 import Title from '../../../Componentes2/Title/Index'
+import { useNavigate } from 'react-router-dom'
 
 
 
 
 const Assets = () => {
+
+    const navigate = useNavigate()
+
+    useEffect(() =>{
+        if(localStorage.getItem('@User') == null){
+            navigate('/')
+        }
+    }, [])
 
 
     return (

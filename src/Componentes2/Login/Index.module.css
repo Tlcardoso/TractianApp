@@ -1,6 +1,7 @@
 .container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     overflow: hidden;
     background-color: rgba(34,102,195,0.2) ;
@@ -8,6 +9,10 @@
     width: 300px;
     height: 300px;
     
+}
+
+.container img{
+  display: none;
 }
 
 .form{
@@ -25,8 +30,18 @@
     }
   }
 
+  .container a{
+    color: maroon;
+    cursor: pointer;
+  }
+
   @media (max-width: 640px){
     .container{
       border-radius: .5rem;
+      height: 470px;
+    }
+
+    .container img{
+      display: block;
     }
   }

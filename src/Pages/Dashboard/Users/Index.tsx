@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import Header from '../../../Componentes2/Header/Index'
 import MenuResponsive from '../../../Componentes2/Menu/Index'
@@ -7,12 +7,21 @@ import CemiCircleChart from '../../../Componentes2/CemiCircleChart/Index'
 import Members from '../../../Componentes2/Members/Index'
 import { Calendar } from 'antd'
 import Title from '../../../Componentes2/Title/Index'
-import UnitsCard from '../../../Componentes2/UnitsCard/Index'
 import UsersCards from '../../../Componentes2/UsersCard/Index'
+import { useNavigate } from 'react-router-dom'
 
 
 
 const Users = () => {
+
+    const navigate = useNavigate()
+
+    useEffect(() =>{
+        if(localStorage.getItem('@User') == null){
+            navigate('/')
+        }
+    }, [])
+
     return (
         <div className={styles.container}>
         <MenuResponsive page='Users'/>
