@@ -1,6 +1,27 @@
-<<<<<<< HEAD
-# TractianApp
-=======
+
+# TractianApp - Control Manager
+
+  <strong>Dashboards can be beautiful and well built!</strong>
+  <br/>
+  <a href='https://tractian-app-adzkbxoww-tlcardoso.vercel.app/'>Application</a>
+  <br/>
+  
+  <img src='https://c.tenor.com/7Xt1ZbSLcwoAAAAC/exploding-boom.gif'/>
+  
+  <strong>This is for study end practice ONLY</strong> This project doesn't use the verification patterns to login, if you want to use it as a template, I suggest you implement a real login verification. This project have integration with this API. Feel free to clone this repository and integrate with your own backend or any other integration. From now on it is up to you.
+  
+# Login
+username: richard@gmail.com <br/>
+password: 123456
+
+# Technologies used
+  <li>React</li>
+  <li>Typescript</li>
+  <li>React-router-dom</li>
+  <li>Axios</li>
+  <li>Highcharts</li>
+  <li>AntDesign React</li>
+  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
